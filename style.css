@@ -7,13 +7,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-::-webkit-scrollbar {
-    visibility: hidden;
-}
-::-webkit-scrollbar-thumb {
-    visibility: hidden;
-}
-
 /* NAVBAR */
 
 .topnav {
@@ -63,10 +56,12 @@ html {
 
 .copyright-home {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 0px;
     cursor: default;
     text-align: right;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 .copyright-home:hover {
@@ -129,21 +124,22 @@ h2 {
     font-family: 'Source Code Pro', monospace;
 }
 
+.footer {
+    width: 100%;
+    float: left;
+}
+.blank {
+    height: 50px;
+    width: 100%;
+    float: left;
+}
+
 .btn_download {
     position: absolute;
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center;
-}
-
-.gpu_img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* LIST */

@@ -39,6 +39,7 @@ body {
 
 .copyright, .copyright-home {
     color: var(--color-primary);
+    background-color: var(--color-background);
 }
 
 .content {
@@ -47,6 +48,10 @@ body {
 }
 
 .lnk {
+    color: var(--color-primary);
+}
+
+li a {
     color: var(--color-primary);
 }
 
@@ -70,12 +75,6 @@ button.disabled {
     color: grey;
 }
 
-/* GALLERY */
-div.gallery {
-    border: 1px solid var(--color-gallery);
-    border-radius: 7px;
-}
-
-div.gallery:hover {
-    border: 1px solid var(--color-primary);
+.blank {
+    background-color: var(--color-background);
 }
