@@ -47,8 +47,32 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a {
+.lnk {
     color: var(--color-primary);
+}
+
+li a {
+    color: var(--color-primary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.disabled {
+    background-color: rgb(189, 189, 189);
+    cursor: not-allowed;
+}
+
+.ok {
+    color: grey;
 }
 
 .blank {
@@ -64,15 +88,4 @@ a {
 
 .warning a {
     color: rgb(220, 0, 0);
-}
-
-.note {
-    padding: 10px 20px;
-    background-color: #edf6ff;
-    color: rgb(5, 51, 144);
-    border-left: rgb(5, 51, 144) 5px solid;
-}
-
-.note a {
-    color: rgb(4, 0, 131);
 }

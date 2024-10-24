@@ -1,18 +1,18 @@
 <head>
     <!--PROPERTIES-->
     <link rel="icon" href="../assets/fv.png">
-    <title>iTunes - EssaSoft</title>
+    <title>Apple Music & iTunes - EssaSoft</title>
     <meta name="description" content="Michał Stankiewicz">
     <meta name="keywords" content="Michał Stankiewicz">
     <meta name="author" content="Michał Stankiewicz">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.stankiewiczm.eu/assets/og-social-media.png" />
+    <meta name="fediverse:creator" content="@mstankiewicz@pol.social" />
     <!--LINKS AND SCRIPTS-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="refresh" content="0;url=/apple-music">
 </head>
 <body>
     <!--NAVBAR-->
@@ -20,11 +20,11 @@
         <a class="name" href="index">EssaSoft by Michał Stankiewicz</a>
         <a href="https://www.stankiewiczm.eu/projects">My projects</a>
         <a href="https://www.stankiewiczm.eu/contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+          <span class="material-symbols-sharp">menu</span>
         </a>
     <script>
-        function myFunction() {
+        function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
@@ -33,28 +33,5 @@
       }
     }
     </script>
-    </div>
-    <!--FOOTER AND COPYRIGHT-->
-    <a class="copyright-home">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script><br><br><img src="MadeByAHuman.svg" alt="made by a human" class="essasoft"></a>
-    <!--CONTENT-->
-    <div class="content">
-        <div class="content-text">
-            <h1>EssaSoft</h1>
-            <p>
-              Download your favorite software easy!
-            </p>
-          <div class="list">
-            <ul>
-              <li class="H">Apple iTunes</li>
-              <li><a href="https://apps.microsoft.com/store/detail/9PB2MZ1ZMB1S">iTunes</a> for Windows 10 or newer</li>
-              <li><a href="https://www.apple.com/itunes/download/win64/">iTunes (64-bit)</a> for Windows 7 or newer</li>
-              <li><a href="https://www.apple.com/itunes/download/win32/">iTunes (32-bit)</a> for Windows 7 or newer</li>
-            </ul>
-          </div>
-        </div>
-        <p class="footer">Do you want to add a program? Maybe you found a problem? Contact me <a class="lnk" href="https://www.stankiewiczm.eu/contact">here</a>.</p><br><p>The software names are a property solely of their respective publishers.
-        I am affiliated neither with them or the creators of the software mentioned above.
-        All the links here redirect the user to the publishers' sites, and the owner of this website has not been paid for this.</p>
-        <div class="blank"></div>
     </div>
 </body>

@@ -1,145 +1,542 @@
-<head>
+<head lang="en">
     <!--PROPERTIES-->
-    <link rel="icon" href="../assets/fv.png">
+    <link rel="icon" href="../assets/fv.png" />
     <title>EssaSoft</title>
-    <meta name="description" content="Michał Stankiewicz">
-    <meta name="keywords" content="Michał Stankiewicz">
-    <meta name="author" content="Michał Stankiewicz">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michał Stankiewicz" />
+    <meta name="keywords" content="Michał Stankiewicz" />
+    <meta name="author" content="Michał Stankiewicz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.stankiewiczm.eu/assets/og-social-media.png" />
+    <meta name="fediverse:creator" content="@mstankiewicz@pol.social" />
     <!--LINKS AND SCRIPTS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
+
 <body>
     <!--NAVBAR-->
     <div class="topnav" id="myTopnav">
         <a class="name" href="index">EssaSoft by Michał Stankiewicz</a>
         <a href="https://www.stankiewiczm.eu/projects">My projects</a>
         <a href="https://www.stankiewiczm.eu/contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+            <span class="material-symbols-sharp" aria-hidden="true">menu</span>
         </a>
-    <script>
-        function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
+        <script>
+            function responsiveMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </div>
-    <!--FOOTER AND COPYRIGHT-->
-    <a class="copyright-home">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script><br><br><img src="MadeByAHuman.svg" alt="made by a human" class="essasoft"></a>
     <!--CONTENT-->
     <div class="content">
         <div class="content-text">
             <h1>EssaSoft</h1>
-            <p>
-              Download your favorite, popular PC and Mac software easy!
-            </p>
-          <div class="list">
-            <ul>
-              <li class="H">Web Browsers</li>
-              <li><a href="https://www.google.com/intl/en_us/chrome/">Google Chrome</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.microsoft.com/en-us/windows/microsoft-edge">Microsoft Edge</a> | Free | Windows (7, 8.1) and macOS</li>
-              <li><a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.opera.com/">Opera</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.opera.com/gx">Opera GX</a> | Free | Windows and macOS</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">Games</li>
-              <li><a href="https://download.amazongames.com/AmazonGamesSetup.exe">Amazon Games</a> | Free | Windows</li>
-              <li><a href="https://www.ea.com/ea-app-beta">EA App</a> | Free | Windows</li>
-              <li><a href="https://store.epicgames.com/pl/download">Epic Games</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.gog.com/galaxy">GOG Galaxy 2.0</a> | Free | Windows and macOS</li>
-              <li><a href="minecraft">Minecraft</a> | Paid | Windows and macOS</li>
-              <li><a href="https://www.origin.com/gbr/en-us/store/download">Origin</a> | Free | Windows and macOS</li>
-              <li><a href="https://socialclub.rockstargames.com/rockstar-games-launcher">Rockstar Games Launcher</a> | Free | Windows</li>
-              <li><a href="https://store.steampowered.com/about/">Steam</a> | Free | Windows and macOS</li>
-              <li><a href="https://eu.wargaming.net/en/wgc">Wargaming.net Game Center</a> | Free | Windows and macOS</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">Tools</li>
-              <li><a href="https://www.7-zip.org/download.html">7-Zip</a> | Free | Windows and macOS</li>
-              <li><a href="https://get.adobe.com/reader">Adobe Acrobat Reader</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.daemon-tools.cc/pol/products/dtLite#install-dtLite-offer">Daemon Tools Lite</a> | Free | Windows and macOS</li>
-              <li><a href="https://filezilla-project.org/download.php?type=client">FileZilla</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.foxit.com/downloads/#Foxit-Reader/">Foxit Reader</a> | Free | Windows and macOS</li>
-              <li><a href="keka">Keka</a> | Free | macOS</li>
-              <li><a href="https://www.mstankiewi.cz/MathBoard/">MathBoard</a> | Free | macOS</li>
-              <li><a href="https://www.parallels.com/products/desktop/download/">Parallels Desktop</a> | Paid | macOS</li>
-              <li><a href="https://www.poweriso.com/download.htm">PowerISO</a> | Paid | Windows</li>
-              <li><a href="https://apps.apple.com/us/app/the-unarchiver/id425424353">The Unarchiver</a> | Free | macOS</li>
-              <li><a href="https://www.ghisler.com/download.htm">Total Commander</a> | Paid | Windows</li>
-              <li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.win-rar.com/postdownload.html">WinRAR</a> | Paid | Windows</li>
-              <li><a href="https://www.winzip.com/en/download/winzip/">WinZip</a> | Paid | Windows and macOS</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">E-mail Clients</li>
-              <li><a href="https://www.getmailbird.com/downloading/?page-type=regular_download">MailBird</a> | Paid | Windows</li>
-              <li><a href="https://www.thunderbird.net/en-US/">Mozilla Thunderbird</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.office.com/">Outlook (in Microsoft Office)</a> | Paid | Windows and macOS</li>
-            </ul>
-            <br>
-          </div>
-          <div class="list">
-            <ul>
-              <li class="H">Video & Music</li>
-              <li><a href="https://allplayer.org/Download/ALLPlayerPL.exe">AllPlayer</a> | Free | Windows</li>
-              <li><a href="https://www.audacityteam.org/download/">Audacity</a> | Free | Windows and macOS</li>
-              <li><a href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe">AVS Media Player</a> | Free | Windows</li>
-              <li><a href="itunes">iTunes</a> | Free | Windows</li>
-              <li><a href="https://www.kodi.tv/download/">Kodi</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.videolan.org/vlc/">VLC Media Player</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.spotify.com/us/download">Spotify</a> | Free | Windows and macOS</li>
-              <li><a href="https://offer.tidal.com/download">Tidal</a> | Paid | Windows and macOS</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">Designing</li>
-              <li><a href="https://creativecloud.adobe.com/en/apps/download/creative-cloud">Adobe Creative Cloud</a> | Paid | Windows and macOS</li>
-              <li><a href="https://www.figma.com/downloads/">Figma</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.gimp.org/downloads/">GIMP</a> | Free | Windows and macOS</li>
-              <li><a href="https://inkscape.org/release/">Inkscape</a> | Free | Windows and macOS</li>
-              <li><a href="paintnet">Paint.NET</a> | Free | Windows</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">Office Suite</li>
-              <li><a href="https://www.openoffice.org/pl/download/index.html">Apache OpenOffice</a> | Free | Windows and macOS</li>
-              <li><a href="iwork">Apple iWork</a> | Free | macOS</li>
-              <li><a href="https://www.libreoffice.org/download/download/">LibreOffice</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.office.com/">Microsoft Office</a> | Paid | Windows and macOS</li>
-            </ul>
-            <br>
-            <ul>
-              <li class="H">Communicators</li>
-              <li><a href="https://discord.com/download">Discord</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.messenger.com/desktop/#startDownload">Messenger</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.microsoft.com/pl-pl/microsoft-teams/download-app#desktopAppDownloadregion">Microsoft Teams</a> | Free | Windows and macOS</li>
-              <li><a href="https://signal.org/download/">Signal</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.skype.com/en/get-skype/">Skype</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.slack.com/downloads/">Slack</a> | Free | Windows and macOS</li>
-              <li><a href="https://signal.org/download/">Telegram</a> | Free | Windows and macOS</li>
-              <li><a href="https://www.whatsapp.com/download">WhatsApp</a> | Free | Windows and macOS</li>
-              <li><a href="https://zoom.us/download">Zoom</a> | Free | Windows and macOS</li>
-            </ul>
-            <br>
-          </div>
+            <p>Download your favorite, popular PC and Mac software easy!</p>
+            <div class="apps">
+                <div class="category">
+                    <h2>Web Browsers</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://arc.net" target="_blank">Arc</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            <tr>
+                                <td><a href="https://www.brave.com/download/" target="_blank">Brave</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://download-chromium.appspot.com/" target="_blank">Chromium</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://floorp.app/download" target="_blank">Floorp</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.google.com/intl/us/chrome/" target="_blank">Google Chrome</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.microsoft.com/en-us/edge/download" target="_blank">Microsoft Edge</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.mozilla.org/firefox/all/desktop-release/" target="_blank">Mozilla Firefox</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.mozilla.org/firefox/all/desktop-esr/" target="_blank">Mozilla Firefox ESR</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.opera.com/browsers/opera" target="_blank">Opera</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.opera.com/gx" target="_blank">Opera GX</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.torproject.org/download/" target="_blank">Tor Browser</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            <tr>
+                                <td><a href="https://vivaldi.com/download/" target="_blank">Vivaldi</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                        </tbody>
+                        </tr>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Games</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://download.amazongames.com/AmazonGamesSetup.exe"target="_blank">Amazon Games</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.ea.com/ea-app#downloads" target="_blank">EA App</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> (10.15 Catalina and newer)</td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://store.epicgames.com/download" target="_blank">Epic Games</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.gog.com/galaxy" target="_blank">GOG Galaxy 2.0</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.ubisoft.com/en-gb/ubisoft-connect/download" target="_blank">Ubisoft Connect</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.hedgewars.org/download.html" target="_blank">Hedgewars</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/hypersomnia" target="_blank">Hypersomnia</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://anuke.itch.io/mindustry" target="_blank">Mindustry</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.minecraft.net/download" target="_blank">Minecraft</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dm.origin.com/mac/download" target="_blank">Origin</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i> (10.14 Mojave and older)</td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://socialclub.rockstargames.com/rockstar-games-launcher" target="_blank">Rockstar Games Launcher</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://store.steampowered.com/about/" target="_blank">Steam</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://eu.wargaming.net/wgc" target="_blank">Wargaming.net Game Center</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Tools</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.7-zip.org/download.html" target="_blank">7-Zip</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> (console version only) <i class="fa fa-linux" aria-hidden="true" title="Linux"></i> (console version only)</td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://get.adobe.com/pl/reader/" target="_blank">Adobe Acrobat Reader</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.daemon-tools.cc/products/dtLite#install-dtLite-offer" target="_blank">Daemon Tools Lite</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/filezilla" target="_blank">FileZilla Client</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.foxit.com/downloads/#Foxit-Reader/" target="_blank">Foxit Reader</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/keka" target="_blank">Keka</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.stankiewiczm.eu/MathBoard/" target="_blank">MathBoard</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.parallels.com/products/desktop/download/" target="_blank">Parallels Desktop</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.poweriso.com/download.htm" target="_blank">PowerISO</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://apps.apple.com/app/the-unarchiver/id425424353" target="_blank">The Unarchiver</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.ghisler.com/download.htm" target="_blank">Total Commander</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.win-rar.com/postdownload.html" target="_blank">WinRAR</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.winzip.com/en/download/winzip/" target="_blank">WinZip</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>E-mail Clients</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.getmailbird.com/downloading/?page-type=regular_download" target="_blank">MailBird</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/thunderbird" target="_blank">Mozilla Thunderbird</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.office.com/" target="_blank">Outlook (in Microsoft Office)</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Video & Music</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/apple-music" target="_blank">Apple Music and iTunes</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://allplayer.org/Download/ALLPlayerPL.exe" target="_blank">AllPlayer</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.audacityteam.org/download/" target="_blank">Audacity</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" target="_blank">AVS Media Player</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.kodi.tv/download/" target="_blank">Kodi</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.videolan.org/vlc/" target="_blank">VLC Media Player</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spotify.com/download" target="_blank">Spotify</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://offer.tidal.com/download" target="_blank">Tidal</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Design</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://creativecloud.adobe.com/en/apps/download/creative-cloud" target="_blank">Adobe Creative Cloud</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.blender.org/download/" target="_blank">Blender</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.figma.com/downloads/" target="_blank">Figma</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://inkscape.org/release/" target="_blank">Inkscape</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/paintnet" target="_blank">Paint.NET</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Office Suite</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.openoffice.org/pl/download/index.html" target="_blank">Apache OpenOffice</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/iwork" target="_blank">Apple iWork</a></td>
+                                <td><i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.libreoffice.org/download/download/" target="_blank">LibreOffice</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.office.com/" target="_blank">Microsoft Office</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">attach_money</span><span class="sr-only">Paid</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="category">
+                    <h2>Communication</h2>
+                    <table class="appsTable">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Platforms</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://discord.com/download" target="_blank">Discord</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://delta.chat/download" target="_blank">Delta Chat</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://element.io/download" target="_blank">Element</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">orders</span><span class="sr-only">Open-source</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            <tr>
+                                <td><a href="https://www.messenger.com/desktop/#startDownload" target="_blank">Messenger</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.microsoft.com/pl-pl/microsoft-teams/download-app#desktopAppDownloadregion" target="_blank">Microsoft Teams</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://signal.org/download/" target="_blank">Signal</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span><span class="material-symbols-sharp" aria-hidden="true">encrypted</span><span class="sr-only">Privacy-focused</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.skype.com/get-skype/" target="_blank">Skype</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.slack.com/downloads/" target="_blank">Slack</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.whatsapp.com/download" target="_blank">WhatsApp</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">money_off</span><span class="sr-only">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://zoom.us/download" target="_blank">Zoom</a></td>
+                                <td><i class="fa fa-windows" aria-hidden="true" title="Windows"></i> <i class="fa fa-apple" aria-hidden="true" title="macOS"></i> <i class="fa fa-linux" aria-hidden="true" title="Linux"></i></td>
+                                <td><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span><span class="sr-only">Free, but with in-app purchases</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <p class="footer">Do you want to add a program? Maybe you found a problem? Contact me <a class="lnk" href="https://www.stankiewiczm.eu/contact">here</a>.</p><br><p>The software names are a property solely of their respective publishers.
-        I am affiliated neither with them or the creators of the software mentioned above.
-        All the links here redirect the user to the publishers' sites, and the owner of this website has not been paid for this.</p>
-        <div class="blank"></div>
+        <div class="symbols" aria-hidden="true">
+            <h2>Meaning of symbols</h2>
+            <div class="symbolsList">
+                <div class="symbol"><span class="material-symbols-sharp" aria-hidden="true">money_off</span> Free</div>
+                <div class="symbol"><span class="material-symbols-sharp" aria-hidden="true">shopping_bag</span> Free, but with in-app purchases</div>
+                <div class="symbol"><span class="material-symbols-sharp" aria-hidden="true">attach_money</span> Paid</div>
+                <div class="symbol"><span class="material-symbols-sharp" aria-hidden="true">orders</span> Open-source</div>
+                <div class="symbol"><span class="material-symbols-sharp" aria-hidden="true">encrypted</span>Privacy-focused</div>
+            </div>
+        </div>
+        <br>
+        <div class="note">
+            <h3>Note</h3>
+            <p>If you are looking for the old version of the site, you can find it <a href="/old">here</a>. Just keep in mind that it is no longer supported and the links and information on it may already be outdated.</p>
+        </div>
+        <p class="footer">
+            Do you want to add a program? Maybe you found a problem? <a href="https://github.com/MStankiewiczOfficial/EssaSoft/issues/new">Create an issue</a> on GitHub.
+        </p>
+        <br>
+        <p>
+            The software names are a property solely of their respective publishers. I am affiliated neither with them or the creators of the software mentioned above. All the links here redirect the user to the publishers' sites, and the owner of this website has not been paid for this.
+        </p>
+        <div>
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://ko-fi.com/s/4662b19f61"><img src="/MadeByAHuman.svg" alt="made by a human"></a>
+                        </td>
+                        <td style="text-align: right;">
+                            <a href="https://www.stankiewiczm.eu">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear());</script></a>
+                        </td>
+                    </tr>
+            </table>
+        </div>
     </div>
 </body>
