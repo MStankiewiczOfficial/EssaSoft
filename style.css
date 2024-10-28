@@ -389,6 +389,10 @@ html {
     font-weight: 900;
 }
 
+#specialTheme {
+    display: none;
+}
+
 /* CONTENT */
 .content {
     margin-top: 50px;

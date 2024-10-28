@@ -32,6 +32,16 @@
     background-color: var(--color-background);
 }
 
+#specialTheme {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+#specialTheme:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+}
+
 /* BODY */
 body {
     background-color: var(--color-background);
@@ -75,4 +85,8 @@ a {
 
 .note a {
     color: rgb(4, 0, 131);
+}
+
+#humanBadge #Background rect {
+    fill: var(--color-primary);
 }

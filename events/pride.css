@@ -1,0 +1,49 @@
+.category:nth-child(1) table.appsTable thead {
+    background: #f29494;
+}
+
+.category:nth-child(2) table.appsTable thead {
+    background: #f2b394;
+}
+
+.category:nth-child(3) table.appsTable thead {
+    background: #f2e994;
+}
+
+.category:nth-child(4) table.appsTable thead {
+    background: #bbf294;
+}
+
+.category:nth-child(5) table.appsTable thead {
+    background: #94f2a8;
+}
+
+.category:nth-child(6) table.appsTable thead {
+    background: #94dbf2;
+}
+
+.category:nth-child(7) table.appsTable thead {
+    background: #9497f2;
+}
+
+.category:nth-child(8) table.appsTable thead {
+    background: #c194f2;
+}
+
+.note {
+    background: linear-gradient(90deg, rgba(189, 0, 0, 0.2) 0%, rgba(189,0,0,0.2) 16%, rgba(221,103,0,0.2) 16%, rgba(221,103,0,0.2) 33%, rgba(201,196,0,0.2) 33%, rgba(201,196,0,0.2) 49%, rgba(0,175,26,0.2) 49%, rgba(0,175,26,0.2) 65%, rgba(0,37,175,0.2) 65%, rgba(0,37,175,0.2) 82%, rgba(119,0,175,0.2) 82%);
+    color: #161616;
+    border-left: rgb(189, 0, 0) 5px solid;
+}
+
+.note a {
+    color: #6a0d0d;
+}
+
+#humanBadge #Background rect {
+    fill: #ff5387;
+}
+
+#specialTheme {
+    display: block;
+}
