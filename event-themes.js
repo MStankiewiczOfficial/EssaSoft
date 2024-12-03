@@ -20,12 +20,23 @@ function addHalloween() {
     document.head.appendChild(link);
 }
 
+function addChristmas() {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'events/christmas.css';
+    link.classList.add('specialTheme');
+    document.head.appendChild(link);
+}
+
 function checkDate() {
     if (month == 6 && day >= 1 && day <= 30) {
         addPride();
     }
     if (month == 10 && day >= 1 && day <= 31) {
         addHalloween();
+    }
+    if (month == 12 && day >= 1 && day <= 26) {
+        addChristmas();
     }
 }
 

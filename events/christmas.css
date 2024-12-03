@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #eb3636;
+    --color-secondary: #1e9413;
+    --color-background: #eef8ff;
+    --color-text: #1a1a1a;
+}
+
+.category table.appsTable thead {
+    background: var(--color-primary)
+}
+
+.category table.appsTable thead th {
+    color: var(--color-background);
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+.note {
+    background-color: #efffe4;
+    color: var(--color-secondary);
+    border-left: var(--color-primary) 5px solid;
+}
+
+.note a {
+    color: #dd0f0f
+}
+
+#specialTheme {
+    display: block;
+}
